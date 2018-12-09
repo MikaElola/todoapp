@@ -1,26 +1,55 @@
 .App {
   text-align: center;
+  max-height: 100vh;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
+.mainContainer {
+  max-width: 80%;
+  margin-left: 25%;
+}
+.todoForm {
+  max-width: 80%;
+  margin: 2% 10% 0% 10%;
+}
+.todoForm input {
+  margin-right: 5%;
+}
+.search {
+ margin-right: 38%;
+ margin-top: 2%;
+ margin-bottom: 2%;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #034cdfd3;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgba(249, 251, 255)
 }
 
 .App-link {
   color: #61dafb;
 }
+.adminTable {
+  display: inline-block;
+  margin-right: 50vh;
+  border-collapse: collapse;
+}
+.adminTable td, .adminTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 20vh;
+}
+.adminTable tr:nth-child(even){background-color: #f2f2f2;}
+.adminTable tr:hover {background-color: #ddd;}
 
 @keyframes App-logo-spin {
   from {
